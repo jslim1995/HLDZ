@@ -2,9 +2,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class Solution {
+class MostFrequentValueFinder {
     public int solution(int[] array) {
-        System.out.println(array.length);
         // 1. 배열 오름차순 정렬
         if(array.length == 1) {
             return array[0];
