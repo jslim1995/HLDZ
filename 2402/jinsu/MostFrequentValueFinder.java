@@ -13,9 +13,7 @@ class MostFrequentValueFinder {
             Arrays.sort(array);
         }
 
-        // 2. 배열에서 각 숫자가 몇 개씩 있는지 MAP 에 저장
-        // MAP 선언
-        // Map<Integer, Integer> numCount = new HashMap<Integer, Integer>();
+        // 2. 배열에서 각 숫자가 몇 개씩 있는지 List에 저장
         List<Integer> listNum = new ArrayList<>();
         List<Integer> listCount = new ArrayList<>();
         // count 선언
@@ -45,18 +43,11 @@ class MostFrequentValueFinder {
         Integer sortCount[] = listCount.toArray(new Integer[listCount.size()]);
         Arrays.sort(sortCount);
 
-        System.out.println(sortCount.length);
-
         int maxCount = sortCount[sortCount.length-1];
 
         int maxCountIdx = listCount.indexOf(maxCount);
         int answer = listNum.get(maxCountIdx);
         
-
-        // Set<Integer> keySet =  numCount.keySet();
-        // for(int i : keySet) {
-            
-        // }
         // 4. 배열의 크기가 1이면 해당 값 리턴, 그렇지 않으면 -1 리턴
         if(maxCount == sortCount[sortCount.length-2]) {
             return -1;
