@@ -1,4 +1,4 @@
-package Hash.jinsu;
+package Hash.JS;
 
 import java.util.Arrays;
 import java.util.HashMap;
