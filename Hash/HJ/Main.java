@@ -1,4 +1,4 @@
-package org.example;
+package Hash.HJ;
 
 import java.util.*;
 
