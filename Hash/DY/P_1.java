@@ -1,3 +1,4 @@
+package Hash.DY;
 //푸드파이터 대회
 class Solution {
     public String solution(int[] food) {
